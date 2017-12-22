@@ -13,5 +13,10 @@ class SpringBootSeedController {
     public String person(@PathVariable String name) {
         return "Hello " + name + "!";
     }
+    
+    @RequestMapping(method = GET, path = "*")
+    public String person2(@PathVariable String name) {
+        return "process complete, exiting thread...";
+    }
 
 }
